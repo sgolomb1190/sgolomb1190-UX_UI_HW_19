@@ -1,5 +1,5 @@
-$( ".toggle" ).click(function(){
-    $(".toggleContainer").css("background-color", "white");
-    $(this).find(".toggleContainer").toggleClass("active");
-  $(this).siblings(".toggle").find(".toggleContainer").removeClass("active");
+$(document).ready(function(){
+  $(".accordion").click(function(){
+    $(".accordionContainer").toggle();
   });
+});
