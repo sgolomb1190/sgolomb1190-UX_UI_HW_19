@@ -79,30 +79,47 @@ button:hover {
     color:hsl(331, 19%, 45%);
 }
 
-.accordion {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-area: "accordionContainer" "plus_minus";
-    grid-template-rows: auto;
-    text-align: left;
-    width: 100%;
-    padding: 10px;
-    margin: 5px;
-    background-color: #F4E28D;
-    color: #005D6C;
+.accordion{
+    width:100%;
+    margin: 5%;
     font-family: 'Sanchez', serif;
 }
 
-.plus_minus {
-    text-align: right;
+/* accordion heading */
+.accordion h1{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom:0px;
+    margin-top:0px;
+    background-color: #F4E28D;
+    color: #005D6C;
+    padding: 10px;
+    border:3px solid white;
+    border-radius:3px;
 }
-  
-.accordionContainer {
-    justify-content: space-between;
-    background-color: white;
-    display: none;
+.accordion h1:hover{
+    cursor:pointer;
 }
 
+/* accordion section content */
+.accordion div{
+    font-family: 'Sanchez' serif;
+    display:none;
+    padding:10px;
+    height:100px;
+    line-height:20px;
+    border: none;
+    border-radius:3px;
+    text-align: left;
+}
+
+@media screen and (max-width:480px){
+    .accordion{
+        width:100%;
+        margin:0;
+    }
+}
 
 footer{ 
     background-color: hsl(331, 19%, 45%); 
