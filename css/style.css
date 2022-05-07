@@ -1,0 +1,132 @@
+#container {
+    width: auto;
+    margin: 2%;
+}
+
+body {
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color:white;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Noto-sans', sans-serif;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    align-content: flex-end;
+}
+
+.work, .about {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+img {
+    float: right; 
+    margin: 5px;
+    padding: 15px 15px 15px 15px;
+
+}
+
+p {
+    display: flex;
+    text-align: left;
+    font-size: 1rem;
+    font-family: Sanchez, serif;
+    flex-wrap: nowrap;
+    padding: 24px;
+}
+
+button {
+    display: grid;
+    width: 33%;
+    background-color: hsl(331, 19%, 45%);
+    background: linear-gradient(hsl(331, 19%, 45%), hsl(331, 19%, 45%) 50%, white 50%, white);
+    background-size: 100% 200%;
+    border: solid hsl(331, 19%, 45%);
+    color: white;
+    padding: 30px;
+    height: 30px;
+    align-content: center;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: white;
+    background-position: 100% 100%;
+    color:hsl(331, 19%, 45%);
+
+}
+
+.plus_minus {
+    float: right;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: #F4E28D;
+    color: #005D6C;
+    font-family: 'Sanchez', serif;
+}
+
+.toggleContainer {
+    padding: 15px;
+    display: none;
+    background-color: #F4E28D;
+}
+
+.active {
+    display: grid;
+    background-color: #F4E28D;
+
+  }
+
+footer{ 
+    background-color: hsl(331, 19%, 45%); 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    margin: 0%;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    background-color: hsl(331, 19%, 45%);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+footer, .contact {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* font-family: 'Sanchez', serif;
