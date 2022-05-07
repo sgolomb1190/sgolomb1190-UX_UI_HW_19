@@ -77,34 +77,32 @@ button:hover {
     background-color: white;
     background-position: 100% 100%;
     color:hsl(331, 19%, 45%);
-
 }
 
-.plus_minus {
-    float: right;
-}
-
-.toggle {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
+.accordion {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: "accordionContainer" "plus_minus";
+    grid-template-rows: auto;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
     margin: 5px;
     background-color: #F4E28D;
     color: #005D6C;
     font-family: 'Sanchez', serif;
 }
 
-.toggleContainer {
-    padding: 15px;
+.plus_minus {
+    text-align: right;
+}
+  
+.accordionContainer {
+    justify-content: space-between;
+    background-color: white;
     display: none;
-    background-color: #F4E28D;
 }
 
-.active {
-    display: grid;
-    background-color: #F4E28D;
-
-  }
 
 footer{ 
     background-color: hsl(331, 19%, 45%); 
@@ -113,7 +111,7 @@ footer{
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 5%;
     margin: 0%;
     height: 40px;
